@@ -19,6 +19,9 @@ import translateInsetIconURL from './translate/translate-small.png';
 import makeymakeyIconURL from './makeymakey/makeymakey.png';
 import makeymakeyInsetIconURL from './makeymakey/makeymakey-small.svg';
 
+import spresenseImage from './spresense/spresense.png';
+import spresenseInsetImage from './spresense/spresense-small.png';
+
 import microbitIconURL from './microbit/microbit.png';
 import microbitInsetIconURL from './microbit/microbit-small.svg';
 import microbitConnectionIconURL from './microbit/microbit-illustration.svg';
@@ -47,6 +50,26 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Spresense"
+                description="Name for the 'Spresense' extension"
+                id="gui.extension.spresense.name"
+            />
+        ),
+        extensionId: 'spresense',
+        iconURL: spresenseImage,
+        insetIconURL: spresenseInsetImage,
+        description: (
+            <FormattedMessage
+                defaultMessage="Spresense"
+                description="Description for the 'Spresense' extension"
+                id="gui.extension.spresense.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
